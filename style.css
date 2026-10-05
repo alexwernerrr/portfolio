@@ -1,11 +1,8 @@
-/*#2E3440*/
-
-
 body {
     font-family: "IBM Plex Sans", sans-serif;
     color: #222222;
-    background: white
-;
+    background: white;
+    margin: 0;
 }
 
 h1, h2, h3 {
@@ -13,12 +10,8 @@ h1, h2, h3 {
     color: #222222;
 }
 
-
 .container {
     display: flex;
-    /*margin-left: 325px;
-    margin-right: 325px;
-    margin-top: 70px;*/
     max-width: 1200px;
     margin: 70px auto;
     padding: 0 20px;
@@ -27,87 +20,127 @@ h1, h2, h3 {
 
 .left {
     flex: 1;
-    background-color: white;
-    text-align: left;
-    /*border: 2px solid black;*/
-    /*border-radius: 5px;*/
-    /*margin-right: 80px;*/
     min-width: 250px;
+    overflow: hidden;
 }
 
 .right {
     flex: 3.5;
-    background-color: white;
-    text-align: left;
-    /*border: 2px solid black;*/
-    /*border-radius: 5px;*/
+}
+
+.portrait {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.name {
+    margin-bottom: -2px;
+}
+
+.school {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.contact {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.contact li {
+    margin-bottom: 3px;
+}
+
+.contact img {
+    height: 1em;
+    margin-right: 3px;
+    vertical-align: -0.1em;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 30px;
 }
 
 a {
-    font-family: "IBM Plex Sans", sans-serif;
-    text-decoration: none;
-    color: #222222;
-}
-
-a:visited,
-
-a:active {
     text-decoration: none;
     color: #222222;
 }
 
 a:hover {
-    color: #0077ff;         /* choose any hover color you want */
+    color: #0077ff;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 50px; /* space between items */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
 }
 
 .item {
     text-align: center;
 }
 
+.item a {
+    display: block;
+    font-weight: bold;
+}
+
 .item img {
+    display: block;
+    width: 100%;
+    height: auto;
     border-radius: 15px;
     margin-bottom: 10px;
 }
 
-.item a {
-    text-decoration: none;
-    font-wheight: bold;
+/* Tablets: two project cards per row */
+@media (max-width: 900px) {
+    .container {
+        gap: 30px;
+        margin: 40px auto;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
 }
 
+/* Phones: stack the profile above the projects */
+@media (max-width: 640px) {
+    .container {
+        flex-direction: column;
+        margin: 24px auto;
+        padding: 0 16px;
+        gap: 10px;
+    }
 
+    .left {
+        min-width: 0;
+        text-align: center;
+    }
 
+    .portrait {
+        width: 160px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
 
+    .right h1 {
+        display: none; /* name is already shown above the projects */
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
