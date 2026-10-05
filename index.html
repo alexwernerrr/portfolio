@@ -1,19 +1,16 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Project portfolio of Alexander Werner, Engineering Physics student at Chalmers University of Technology.">
 
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 
-
-    
     <title>Alexander Werner</title>
     <link rel="icon" type="image/png" href="sputnik.png">
 </head>
@@ -22,44 +19,42 @@
 
     <div class="container">
 
-    <div class="left" style="overflow: hidden;">
-        <img src="CV_bild.jpg" alt="Picture of me" style="width: 100%; object-fit: contain; border-radius: 5px">
-        <h3 style="margin-bottom: -2px;">Alexander Werner</h3>
-        
-        <p style="font-size: 15px; margin-bottom: 20px;">
+    <div class="left">
+        <img class="portrait" src="CV_bild_small.jpg" alt="Portrait of Alexander Werner">
+        <h3 class="name">Alexander Werner</h3>
+
+        <p class="school">
             Chalmers University of Technology <br>
             M.Sc. in Engineering Physics
         </p>
-        
-        <hr> 
-        <p style="margin-bottom: 3px; margin-top: 20px;"><img src="chatgpt-image-letter.png" style="height: 1em; margin-right: 3px;"> alexander@wernerdev.com</p>
-        <a href="https://www.linkedin.com/in/alexwernerrr" target="_blank"> <img src="chatgpt-image-in.png" style="height: 1em; margin-right: 3px;"> LinkedIn</a><br style="margin-bottom: 3px;">
-        <a href="CV_Alexander_Werner.pdf" target="_blank"> <img src="chatgpt-image-docs.png" style="height: 1em; margin-right: 3px;"> CV</a>
+
+        <hr>
+        <ul class="contact">
+            <li><a href="mailto:alexander@wernerdev.com"><img src="icon-letter.png" alt=""> alexander@wernerdev.com</a></li>
+            <li><a href="https://www.linkedin.com/in/alexwernerrr" target="_blank" rel="noopener"><img src="icon-in.png" alt=""> LinkedIn</a></li>
+            <li><a href="CV_Alexander_Werner.pdf" target="_blank"><img src="icon-docs.png" alt=""> CV</a></li>
+        </ul>
     </div>
 
     <div class="right">
         <h1>Alexander Werner</h1>
-        <p style="margin-bottom: 30;">
+        <p class="intro">
             Hi! I'm an Engineering Physics student at Chalmers University of Technology. Welcome to my Project Portfolio!
         </p>
 
         <hr>
 
-        <h2 style="margin-top: 30px;">My Projects</h2>
+        <h2>My Projects</h2>
 
         <div class="grid">
-            <div class="item"><a href="/ProjectPages/mic-array/index.html"><img src="gemini-mic-array.png" style="width: 100%;"><br>Microphone Array</a></div>
-            <!-- <div class="item"><a href="/ProjectPages/project2.html"><img src="placeholder.png" style="width: 100%;"><br>Project 2</a></div> -->
-            <!--<div class="item"><a href="/ProjectPages/project3.html"><img src="placeholder.png" style="width: 100%;"><br>Project 3</a></div> --> 
-
+            <div class="item"><a href="ProjectPages/mic-array/index.html"><img src="mic-array-thumb.jpg" alt="Microphone array project" width="800" height="800">Microphone Array</a></div>
+            <!-- <div class="item"><a href="ProjectPages/project2.html"><img src="placeholder.png" alt="">Project 2</a></div> -->
+            <!-- <div class="item"><a href="ProjectPages/project3.html"><img src="placeholder.png" alt="">Project 3</a></div> -->
         </div>
-        
-    </div>
 
+    </div>
 
     </div>
 
 </body>
-
-
 </html>
