@@ -1,0 +1,59 @@
+body {
+    font-family: "IBM Plex Sans", sans-serif;
+    color: #222222;
+    background: white
+;
+}
+
+h1, h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+    color: #222222;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Create 2 equal columns */
+  gap: 20px;
+}
+
+.item.featured {
+  grid-column: span 2; /* Spans across both columns on the first row */
+}
+
+.item img {
+  width: 100%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
